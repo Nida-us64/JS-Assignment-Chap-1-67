@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<img class="myImages" id="myImg" src="images/others/12.jpg" alt="Iceland" width="210" height="150">
+<img class="myImages" id="myImg" src="images/others/13.jpg" alt="Positano, Almalfi Coast, Italy," width="210" height="150">
+<img class="myImages" id="myImg" src="images/others/14.png" alt="Rio de Janeiro, Brazil" width="210" height="150">
+<img class="myImages" id="myImg" src="images/others/15.jpg" alt=" Aansu lake, Pakistan" width="210" height="150">
+<div id="myModal" class="modal">
+
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+    <div id = "content">
+     1. Iceland,
+A vast winter and a perfect place to watch the aurora.<br>
+
+2. Positano, Almalfi Coast, Italy,
+Storybook town on a cliff by the sea.
+
+
+
+<br>3.Rio de Janeiro, Brazil
+The iconic statue overlooking the city.
+
+<br>4. Aansu lake, Pakistan
+The name "Ansoo" comes from its tear-like shape.
+
+    </div>
+    <hr />
+    <a class="font-button plus">Zoom In (+)</a> <a class="font-button minus">Zoom Out(-)</a>
+<script src="app.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".font-button").bind("click", function () {
+                var size = parseInt($('#content').css("font-size"));
+                if ($(this).hasClass("plus")) {
+                    size = size + 10;
+                } else {
+                    size = size - 10;
+                    if (size <= 10) {
+                        size = 10;
+                    }
+                }
+                $('#content').css("font-size", size);
+            });
+        });
+    </script>
+</body>
+</html>

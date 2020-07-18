@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 39-52</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<!-- Chapter(Events)CHAP 43-48 Q1 -->
+	<!--
+	<a href="#" onclick="foo()">Click here!!!</a>
+	-->
+			<!-- Chapter(Events)CHAP 43-48 Q2 -->
+	<!--
+<div style="display: inline-block; text-align: center;">
+	<img onclick="foo()" src="img/mob1.png" width=270px>
+	<img onclick="foo()" src="img/mob2.png" width=370px>
+	<img onclick="foo()"src="img/mob3.png" width=370px>
+	<img onclick="foo()"src="img/mob1.png" width=270px>
+</div>			
+		-->
+			<!-- Chapter(Events)CHAP 43-48 Q3 -->
+ 	<!-- 
+<h3>Student Record</h3>
+<table style="width:20%; border: 1px solid black;
+  border-collapse: collapse; text-align: center;">
+  <tr>
+    <th style="padding: 5px;text-align: left;">Index</th>
+    <th style="padding: 5px;text-align: left;">Name</th>
+    <th style="padding: 5px;text-align: left;">Class</th>
+    <th style="padding: 5px;text-align: left;">Delete row</th>
+  </tr>
+  <tr id="l1"onclick="del0()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">0</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">John</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">10</td>
+  <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+
+  </tr>
+  <tr id="l2"onclick="del1()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">1</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Doe</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">9</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l3"onclick="del2()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">2</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Mark</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">10</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+<tr id="l5"onclick="del4()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">4</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Jonas</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">8</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l6"onclick="del5()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">5</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Lucas</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">8</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l7"onclick="del6()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">6</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">William</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">9</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l8"onclick="del7()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">7</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Noah</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">10</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l9"onclick="del8()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">8</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Christian</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">9</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l10"onclick="del9()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">9</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Paul</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">8</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+  <tr id="l11"onclick="del10()">
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">10</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">Mark</td>
+    <td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;">10</td>
+<td style="padding: 5px;text-align: left; border: 1px solid black;
+  border-collapse: collapse;"><button>delete</button></td>
+  </tr>
+
+</table> -->
+
+		<!--- Chapter(Events)CHAP 43-48 Q4  -->
+	<!---
+		<img src="img/mob1.png" id="before" onMouseover="swapPic();" onmouseout="mOut();">
+ 	-->
+
+ 		<!--- Chapter(Events)CHAP 43-48 Q5  -->
+ 	<!---	
+ <div>
+ 	<h3>Click Counter</h3>
+    	<button id="clickme">Click me: 0</button>
+</div>
+		-->
+
+		<!--- Chapter(Events)CHAP49-52  Q1  -->
+	<!-----
+<h1>Sign Up Form</h1>
+  <form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" ><br><br>
+  Last name: <input type="text" name="lname" ><br><br>
+  Email add: <input type="text" name="lname" ><br><br>
+  Password: <input type="Password" name="lname"><br><br>
+
+</form> 
+<button onclick="myFunction()">Submit</button>
+<p id="data"></p>
+	----->
+
+		<!--- Chapter(Events)CHAP49-52  Q2  -->
+	<!---	
+<h1>Read More Function</h1>
+<h4>Please Click on 'read more' which is below, to continue reading :) </h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+tempor incididunt ut labore et doloreconsectetur adipisicing eli magna.<a onclick="javascript:ShowHide('HiddenDiv')"><br><b> read more</b></a>
+<div class="mid" id="HiddenDiv" style="display: none;">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse<br>
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non<br>
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	--->
+
+		<!--- Chapter(Events)CHAP49-52  Q3  -->
+<!-- CODE Starts from here ----- 
+<style>
+	.container{overflow: hidden;}
+	.tab{float: left;}
+	.tab-2{margin-left: 50px;}
+	.tab-2 input{display: block;margin-bottom: 10px;}
+	tr{transition: all .25s ease-in-out}
+	tr:hover{background-color: #eee;cursor: pointer;}
+</style>
+<div class="container">
+	<div class="tab tab-1">
+		<table id="table" border="1">
+			<tr>
+				<th>Index </th>
+				<th>Name</th>
+				<th>Class</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>John</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Doe</td>
+				<td>9</td>
+			</tr>
+
+			<tr>
+				<td>2</td>
+				<td>Mark</td>
+				<td>10</td>
+			</tr>
+		</table>
+	</div>
+	<div class="tab tab-2">
+		Index: <input type="text" name="fname" id="fname">
+		Name: <input type="text" name="lname" id="lname">
+		Class: <input type="text" name="age" id="age">
+		<button onclick="addRow();">Add</button>
+		<button onclick="edit();">Edit</button>
+		<button onclick="delRow();">Delete</button>
+	</div>
+</div> 
+-->
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
